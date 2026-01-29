@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Documentation API - Port Russell</title>
+</head>
+<body>
+  <h1>Documentation API – Port de plaisance Russell</h1>
+
+  <p>API privée (auth requise sur les routes /catways et /users).</p>
+
+  <h2>Authentification</h2>
+  <ul>
+    <li><strong>POST</strong> /login</li>
+    <li><strong>GET</strong> /logout</li>
+  </ul>
+
+  <h2>Catways</h2>
+  <ul>
+    <li><strong>GET</strong> /catways</li>
+    <li><strong>GET</strong> /catways/:id</li>
+    <li><strong>POST</strong> /catways</li>
+    <li><strong>PUT</strong> /catways/:id (modifie uniquement catwayState)</li>
+    <li><strong>DELETE</strong> /catways/:id</li>
+  </ul>
+
+  <h2>Réservations (sous-ressource)</h2>
+  <ul>
+    <li><strong>GET</strong> /catways/:id/reservations</li>
+    <li><strong>GET</strong> /catways/:id/reservations/:idReservation</li>
+    <li><strong>POST</strong> /catways/:id/reservations</li>
+    <li><strong>PUT</strong> /catways/:id/reservations/:idReservation</li>
+    <li><strong>DELETE</strong> /catways/:id/reservations/:idReservation</li>
+  </ul>
+
+  <h2>Utilisateurs</h2>
+  <ul>
+    <li><strong>GET</strong> /users</li>
+    <li><strong>GET</strong> /users/:email</li>
+    <li><strong>POST</strong> /users</li>
+    <li><strong>PUT</strong> /users/:email</li>
+    <li><strong>DELETE</strong> /users/:email</li>
+  </ul>
+
+  <p><a href="/">Retour à l'accueil</a></p>
+</body>
+</html>
+EOF

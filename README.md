@@ -1,0 +1,1 @@
+Le tableau de bord affiche les informations de l’utilisateur connecté ainsi qu’un tableau récapitulatif des réservations en cours.

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tableau de bord</title>
+</head>
+<body>
+
+  <h1>Tableau de bord</h1>
+
+  <nav>
+    <ul>
+      <li><a href="/ui/catways">Gestion des catways</a></li>
+      <li><a href="/ui/reservations">Gestion des réservations</a></li>
+      <li><a href="/ui/users">Gestion des utilisateurs</a></li>
+      <li><a href="/docs">Documentation API</a></li>
+      <li><a href="/logout">Se déconnecter</a></li>
+    </ul>
+  </nav>
+
+  <hr />
+
+  <h2>Utilisateur connecté</h2>
+  <p><strong>Nom :</strong> <%= user.username %></p>
+  <p><strong>Email :</strong> <%= user.email %></p>
+  <p><strong>Date du jour :</strong> <%= new Date().toLocaleDateString("fr-FR") %></p>
+
+  <hr />
+
+  <h2>Réservations en cours</h2>
+  <p>(exemple simplifié pour le devoir)</p>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Catway</th>
+        <th>Client</th>
+        <th>Bateau</th>
+        <th>Début</th>
+        <th>Fin</th>
+      </tr>
+    </thead>
+    <tbody id="reservations-table">
+      <!-- rempli via JS plus tard -->
+    </tbody>
+  </table>
+  <script src="/app.js" defer></script>
+</body>
+</html>
